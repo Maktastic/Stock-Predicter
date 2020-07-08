@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>400</width>
+      <height>500</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame
+{
+background: #333;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="edit_username">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>109</y>
+       <width>270</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_password">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>237</y>
+       <width>270</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_error">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>360</y>
+       <width>270</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_error
+{
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>ddd</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="submit_login">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>298</y>
+       <width>100</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#submit_login
+{
+	position: relative;
+	display: block;
+  	padding: 0;
+  	overflow: hidden;
+	border-width: 0;
+  	outline: none;
+  	border-radius: 2px;
+  	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  	background-color: red;
+  	color: #ecf0f1;
+  	transition: background-color .3s;
+}
+
+</string>
+     </property>
+     <property name="text">
+      <string>Login</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_needacc">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>420</y>
+       <width>121</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_needacc
+{
+	color: white;
+}</string>
+     </property>
+     <property name="text">
+      <string>Need an Account?</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="signup_btn">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>420</y>
+       <width>93</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#signup_btn
+{
+	position: relative;
+	display: block;
+  	padding: 0;
+  	overflow: hidden;
+	border-width: 0;
+  	outline: none;
+  	border-radius: 2px;
+  	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  	background-color: red;
+  	color: #ecf0f1;
+  	transition: background-color .3s;
+}</string>
+     </property>
+     <property name="text">
+      <string>Signup!</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="password_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>166</y>
+       <width>400</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#password_btn
+{
+	background:red;
+	border-radius: 60px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/password_btn.png</normaloff>Images/password_btn.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="username_btn">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>37</y>
+       <width>400</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>10</pointsize>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#username_btn
+{
+	background:red;
+	border-radius: 60px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Images/top_login.png</normaloff>Images/top_login.png</iconset>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Signup</class>
+ <widget class="QWidget" name="Signup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>398</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>15</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>4</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame
+{
+background: #333;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="edit_username">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>109</y>
+      <width>270</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_password">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>237</y>
+      <width>270</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_error">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>681</y>
+      <width>270</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#label_error
+{
+	color: white;
+}</string>
+    </property>
+    <property name="text">
+     <string>ddd</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="submit_login">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>618</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#submit_login
+{
+	position: relative;
+	display: block;
+  	padding: 0;
+  	overflow: hidden;
+	border-width: 0;
+  	outline: none;
+  	border-radius: 2px;
+  	box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  	background-color: red;
+  	color: #ecf0f1;
+  	transition: background-color .3s;
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>Signup</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="password_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>166</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#password_btn
+{
+	background:red;
+	border-radius: 60px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/password_btn.png</normaloff>Images/password_btn.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="username_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>37</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#username_btn
+{
+	background:red;
+	border-radius: 60px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Images/top_login.png</normaloff>Images/top_login.png</iconset>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="firstname_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#firstname_btn
+{
+	background:red;
+	border-radius: 60px;
+	color: #ffebee;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Name</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_firstname">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>361</y>
+      <width>270</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dob_btn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>410</y>
+      <width>400</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#dob_btn
+{
+	background:red;
+	border-radius: 60px;
+	color: #ffebee;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Date Of Birth</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_dob">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>490</y>
+      <width>270</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
